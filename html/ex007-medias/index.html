@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+    
+</head>
+<body>
+    <h1>Media</h1>
+    
+    <h2>imagem dinamica</h2>
+    <p>
+        imagens em resoluçoes diferentes
+    </p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="image/image-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="image/image-m.png" type="image/png">
+        <img src="image/image-g.png" alt="imagem flexivel">
+    </picture>
+    
+    <h2>Audio</h2>
+    
+    <audio preload="metadata" controls loop> <!--adicionar o parametro autoplay e loop para rodar a musica em background-->
+        <source src="media/lights.mp3" type="audio/mpeg">
+        <source src="media/lights.ogg" type="audio/ogg">
+        <source src="media/lights.wav" type="audio/wav"><!--use o menos possivel, muito pesado-->
+        <p>
+            imfelismente seu navegador nao pode reproduzir audio <a href="media/lights.mp3" target="_blank" rel="download">clique aqui</a> para baixar o arquivo
+        </p>
+    </audio>
+
+    <h2>videos internos</h2>
+
+    <h3>servidor local</h3>
+    <video controls width="520" poster="image/thumbnail.jpg" loop>
+        <source src="media/waterfall.mp4" type="video/mp4">
+        <source src="media/waterfall.m4v" type="video/mp4">
+        <source src="media/waterfall.webm" type="video/webm">
+        <p>infelismente seu navegador nao pôde renderizar este video</p>
+    </video> <!--este metodo gerarar um alto custo por usar os dados do proprio servidor-->
+    
+    <h2>videos com incorporaçao externa</h2>
+    
+    <h3>YouTube</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TJRyKe2IAU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--este metodo ira gerar o minimo de custo por usar os dados do youtube-->
+    
+    <h3>Vimeo</h3>
+    <iframe src="https://player.vimeo.com/video/594269791?h=bca30245de&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
