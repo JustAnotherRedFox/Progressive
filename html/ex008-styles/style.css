@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+    background-color: cornsilk;
+}
+
+h1{
+    font-size: 45px;
+    color: crimson;
+    font-family: Gill sans;
+    text-align: justify;
+}
+
+h2{
+    color: darkblue;
+    font-family: Arial;
+}
+
+h3{
+    color: blue;
+    font-family: Impact;
+}
+
+p{
+    color: coral;
+    font-family: cursive;
+    text-align: justify;
+}
