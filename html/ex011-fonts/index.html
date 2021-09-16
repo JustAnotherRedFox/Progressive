@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+
+        @font-face {
+            font-family: ponyonscript;
+            src: url('fonts/PinyonScript-Regular.ttf') format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /*
+        tipos de format()
+        - opentype(otf)
+        - truetype(ttf)
+        - embedded-opentype
+        - truetype-aat(apple advanced typography)
+        - avg
+        */
+
+        body {
+            font-family: 'Cormorant Garamond', serif;
+              /*medidas absolutas
+              cm, mm, in, px, pt, pc
+              medidas relativas
+              em, ex, rem, vm, vh, %
+              medidas recomendadas
+              em, px*/
+            font-size: 16px;   
+              /* lighter, normal, bold, bolder*/ 
+        }
+
+        
+            /*font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 2em;
+            font-style: italic;
+            shorthand font
+            font-style, font-weight, font-size, font-family
+            font: italic bolder 3em 'Cormorant Garamond', serif;*/
+        
+        p {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>fontes</h1>
+    <h2>importando fonts</h2>
+    <p style="font-family: 'Cormorant Garamond';">
+        <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum fugit illum nesciunt exercitationem impedit, earum, est nam dolore natus quibusdam minus nostrum saepe atque cum hic. Animi, eligendi ea!</em>
+    </p>
+
+    <h2>fonts internas</h2>
+    <p style="font-family: 'ponyonscript', serif;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatem saepe, excepturi recusandae aperiam dolores? Amet cumque, ea officia perferendis itaque dolorum et voluptas! Minus modi maiores tempore dolores numquam!
+    </p>
+</body>
+</html>
