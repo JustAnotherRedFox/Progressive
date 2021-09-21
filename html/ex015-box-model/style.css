@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+h1 { /*box-level ou block*/
+    background-color: #537422b2;
+    color: #000;
+    text-align: center;
+
+    height: 50px;
+    width: 350px;
+
+    /*padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;*/
+    padding: 10px 20px;
+
+    /*border-width: 10px;
+    border-style: groove;
+    border-color: goldenrod;*/
+    border: 10px groove #daa520;
+    
+    /*outline-width: auto;
+    outline-style: dotted;
+    outline-color: gray;*/
+    outline: auto dotted #808080;
+
+
+    /*margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;*/
+    margin: 10px auto 20px auto; 
+
+    position: relative;
+}
+
+a { /*inline-level ou inline*/
+    padding: auto;
+    
+    border: 3px dotted #913636;
+}
+
+/*
+pode se usar 'display: ;' para mudar o tipo da box para inline/block
+*/

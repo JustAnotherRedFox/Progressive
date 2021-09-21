@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    background-color: #d9765db9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #36120A;
+    text-align: center;
+}
+
+h2 {
+    color: #41160b;
+    text-align: center;
+}
+
+p {
+    color: #47170b;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+h1#main {
+    color: #f6947c;
+    background-color: #36120A;
+} 
+
+/*
+in HTML is 'id', in CSS is '#'
+in HTML is 'class', in CSS is '.'
+use 'id' para items unicos e 'class' para multiplos
+*/

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #0303ba;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #00007c;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #00004d;
+
+}
+
+a:active {
+    color: #00f;
+}
+
+a::after {
+    content: '[link]';
+    color: rgba(191, 188, 188, 0.733);
+}
+
+/* seletores personalizados
+#   =   id
+.   =   class
+:   =   pseudo-class
+::  =   pseudo-element
+>   =   children
+*/
