@@ -12,6 +12,8 @@ header {
     margin: auto 5px;
     padding: 10px 10px;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
 }
 
 header > h1 {
@@ -30,6 +32,8 @@ main {
     background-color: #fff;
     padding: 10px;
     margin: 4px 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
 }
 
 h2 {
