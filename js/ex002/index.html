@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>iniciando com dom</h1>
+    <p>
+        primeiro paragrafo
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id animi voluptas ab voluptatum fugit totam odio autem sit exercitationem placeat! Dolores similique alias aperiam quas repellendus aliquam laborum dignissimos quisquam?
+    </p>
+
+    <p id="sinopse">
+        aprendendo sobre o DOM no javascript
+    </p>
+
+    <p>
+        segundo paragrafo
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia neque perspiciatis dolor corporis quod magnam provident sit dicta laudantium veniam doloribus, odio ad id nesciunt ea, temporibus natus, non error.
+    </p>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var p2 = window.document.getElementById('sinopse')
+        
+        window.document.write(`esta escrito: ${p2.innerText}`)
+        p1.style.color = '#000'
+        
+    </script>
+</body>
+</html>

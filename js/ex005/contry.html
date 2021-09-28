@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>conditions in javascript</h1>
+        <nav>
+            <a href="contry.html">contry</a>
+            <a href="traffic.html">traffic ticket system</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>contry verification</h2>
+
+                <span>type your contry</span> <input type="text" name="contry" id="contry">
+                <input type="button" value="verify" onclick="verify_contry()">
+
+                <div id="response">
+
+                </div>
+
+                <script>
+                    function verify_contry() {
+                        var nacionality = window.document.querySelector('input#contry');
+                        var response = window.document.querySelector('div#response');
+
+                        response.innerHTML = `your nacionality is ${nacionality}`;
+
+                        if (nacionality === "brazil" || nacionality === "brasil") {
+                            response.innerHTML += "you're a brazillian";
+                        }
+                        else {
+                            response.innerHTML += "you're a foreign";
+                        }
+                    }
+                </script>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

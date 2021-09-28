@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicoes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>conditions in javascript</h1>
+        <nav>
+            <a href="contry.html">contry</a>
+            <a href="traffic.html">traffic ticket system</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <article>
+                <h2>traffic ticket system</h2>
+
+                <span>type the speed of your vehicle</span><input type="number" name="txtspeed" id="txtspeed">
+                <input type="button" value="verify" onclick="calculate()">
+
+                <div id="response">
+
+                </div>
+
+                <script>
+                    function calculate() {
+                        var txtsp = window.document.getElementById('txtspeed');
+                        var response = window.document.querySelector('div#response');
+                        var spd = Number(txtsp.value);
+                        var speed_mi = spd / 1.609;
+
+                        speed_mi = speed_mi.toFixed(2);
+
+                        response.innerHTML = `<p>you speed is ${spd}KM/h or ${speed_mi}Mi/h</p>`;
+
+                        if (spd > 80) {
+                            response.innerHTML += `<p>you has been <strong>fined</strong> by surpasse the maximus allowed speed </p>`
+                        }
+
+                        response.innerHTML += '<p>drive allways carefully</p>';
+                    }
+                </script>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>aprendendo mais sobre o DOM</h1>
+    <h2>eventos DOM</h2>
+    <div id="area">
+        interaja...
+    </div>
+
+    <script>
+        var ar = window.document.getElementById('area')
+        ar.addEventListener('click', clicar)
+        ar.addEventListener('mousecenter', salvo)
+        ar.addEventListener('mouseout', outside)
+
+        function clicar() {
+            ar.innerText = 'clicou!'
+            ar.style.background = '#f00'
+        }
+
+        function salvo() {
+            ar.innerText = 'enter'
+            ar.style.background = '#083d08'
+        }
+
+        function outside() {
+            ar.innerText = 'out'
+            ar.style.background = '#083d08'
+        }
+    </script>
+</body>
+</html>

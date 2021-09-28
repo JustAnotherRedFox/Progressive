@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+div#area {
+    background-color: #0e0e91;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    margin: auto;
+}
