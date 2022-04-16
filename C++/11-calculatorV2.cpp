@@ -4,8 +4,8 @@
 using namespace std;
 
 int main() {
-    char menu;
-    double number1, number2;
+    char operation;
+    double number1, number2, result;
 
     cout << "Enter a Number :\n>> ";
     cin >> number1;
@@ -18,26 +18,26 @@ int main() {
     cout << "[-] to Subtract\n";
     cout << "[*] to Multiplie\n";
     cout << "[/] to divide\n>> ";
-    cin >> menu;
+    cin >> operation;
 
-    menu = toupper(menu); //convert one the 1st character to upper case
-    if (menu == '+') {
-        cout << number1 << " + " << number2 << " = " << number1 + number2 << endl;
+    operation = toupper(operation); //convert one the 1st character to upper case
+    if (operation == '+') {
+        result = number1 + number2;
 
-    } else if (menu == '-') {
-        cout << number1 << " - " << number2 << " = " << number1 - number2 << endl;
+    } else if (operation == '-') {
+        result = number1 - number2;
 
-    } else if (menu == '*') {
-        cout << number1 << " x " << number2 << " = " << number1 * number2 << endl;
+    } else if (operation == '*') {
+        result = number1 * number2;
 
-    } else if (menu == '/') {
-        cout << number1 << " / " << number2 << " = " << number1 / number2 << endl;
+    } else if (operation == '/') {
+        result = number1 / number2;
 
     } else {
-        cout << "you insert an invalid number or operator, please choose again." << endl;
+        cout << "you insert an invalid number or operation, please choose again." << endl;
     }
 
-
+    cout << number1 << " " << operation << " " << number2 << " = " << result << endl;
 
     return 0;
 }
