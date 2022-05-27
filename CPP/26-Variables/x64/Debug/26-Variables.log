@@ -1,0 +1,3 @@
+﻿  Main.cpp
+C:\Users\Rubens & Familía\Documents\GitHub\Progressive_code\CPP\26-Variables\Main.cpp(14,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+  26-Variables.vcxproj -> C:\Users\Rubens & Familía\Documents\GitHub\Progressive_code\CPP\26-Variables\x64\Debug\26-Variables.exe
