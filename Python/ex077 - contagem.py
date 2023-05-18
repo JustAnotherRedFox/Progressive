@@ -1,7 +1,7 @@
-palavras = ('gratis', 'aprender', 'python', 'diaadia', 'televisao')
+words = ('gratis', 'aprender', 'python', 'diaadia', 'televisao')
 
-for count in palavras:
-    print(f"\nna palavra {count} temos as vogais", end=' ')
-    for letra in count:
-        if letra.lower() in 'aeiou':
-            print(f"{letra}", end=' ')
+for word in words:
+    print(f"\nna palavra {word} temos as vogais", end=' ')
+    for l in word:
+        if l.lower() in 'aeiou':
+            print(l, end=' ')
