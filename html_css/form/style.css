@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+section {
+    width: auto;
+}
+
+.input_area {
+    margin: 10px 0px 10px 1px;
+}
+
+#msg_input {
+    height: 75px;
+    width: 255px;
+}
+
+fieldset {
+    width: auto;
+}

@@ -1,2 +1,0 @@
-﻿  Main.cpp
-C:\Users\Rubens & Familía\Documents\GitHub\Progressive_code\CPP\28-Pointers\src\Main.cpp(14,9): error C2040: 'ptr': 'char **' differs in levels of indirection from 'int *'

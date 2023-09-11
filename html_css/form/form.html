@@ -1,0 +1,36 @@
+<section>
+    <link rel="stylesheet" href="style.css">
+    
+    <form action="" method="POST" id="name_form">
+        <fieldset>
+            <legend>contato</legend>
+    
+            <label for="name_input">nome:</label>
+            <input type="text" name="" id="name_input" class="input_area"
+                minlength="4" maxlength="100"
+                placeholder="ex.: fernando da silva "
+                required
+                size="29"
+            > <br>
+    
+            <label for="email_input">email:</label>
+            <input type="email" name="" id="email_input" class="input_area"
+                minlength="" maxlength=""
+                placeholder="ex.: exemplo@dominio.com"
+                required
+                size="29"
+                pattern="*\.com*"
+            > <br>
+    
+            <label for="msg_input">mensagem:</label> <br>
+            <textarea name="" id="msg_input" class="input_area"
+            placeholder="Digite sua mensagem aqui!"
+                required
+                minlength="10"
+            ></textarea> <br>
+    
+            <button type="submit">enviar</button>
+        </fieldset>
+    </form>
+</section>
+

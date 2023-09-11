@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/*global config*/
+
+:root {
+    --back_color0: #fff;
+    --back_color1: #6891d2ca, #15153f;
+    --back_color2: #3939b7dc, #15153f;
+    --back_button_color: #c7e2f8;
+    --button_color: #191983;
+    --link_hover_color: #2459d5;
+    --link_color: #09123b;
+
+    --font_standard: Arial, Helvetica, sans-serif ;
+    --font_title: 'Times New Roman', Times, serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--font_standard);
+    background-image: linear-gradient(to bottom, var(--back_color1));
+    background-attachment: fixed;
+    
+}
+
+a:hover {
+    color: var(--link_hover_color);
+    text-decoration: underline;
+}
+
+a {
+    color: var(--link_color);
+    text-decoration: none;
+}
+
+a.external::after {
+    content: '\1F517';
+}
+
+a:active {
+    color: #414b7c;
+    background-color: #181850;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+/*header config*/
+
+header {
+    background-image: linear-gradient(to bottom, var(--back_color2));
+    text-align: center;
+    margin: 0px auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: var(--back_color0);
+    box-shadow: 0px 7px 20px #120e33c3;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px #07072e;
+    padding-bottom: 10px;
+    font-size: 2.5em;
+    font-family: var(--font_title);
+}
+
+h2, h3 {
+    font-family: var(--font_title);
+    color: #0a1b42;
+    text-align: center;
+}
+
+article > ul {
+    padding: 10px 20px;
+}
+
+nav {
+    padding: 10px;
+}
+
+nav > a {
+    color: #fff;
+    padding: 5px 10px;
+}
+
+nav > a:hover {
+    background-color: #1f1f6d;
+    color: #fff;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+
+/*body config*/
+
+main {
+    background-color: var(--back_color0);
+    margin: auto;
+    padding: 5px 10px;
+    min-width: 320px;
+    max-width: 900px;
+    box-shadow: 0px 0px 10px #00000091;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+img, source {
+    display: block;
+    margin: auto;
+    width: auto;
+    
+}
+
+main p {
+    text-indent: 20px;
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+div.videos {
+    background-color: var(--button_color);
+    margin: 0px -10px 30px -10px;
+    padding: 15px;
+    padding-bottom: 57%;
+
+    position: relative;
+}
+
+div.videos > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/*footer config*/
+
+footer {
+    background-color: #020216;
+    color: #d2d1fe;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
