@@ -35,7 +35,8 @@ body * {
 }
 
 #canvas {
-	width: 360px;
+	width: 100%;
+	max-width: 588px;
 	margin: 56px auto 0px;  /*apply margin in all directions, but a css rule prevent the application on top and bottom*/
 	padding: 0 24px;
 }
