@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O DevLinks é um agregador de links para usar como cartão de visitas online.
 
-- [Acesse o projeto finalizado, online](justanotherredfox.github.io/resources/projects/sites/devlinks/index.html)
+- [Acesse o projeto finalizado, online](https://justanotherredfox.github.io/resources/projects/sites/devlinks/index.html)
 
 ## 🔖 Layout
 
