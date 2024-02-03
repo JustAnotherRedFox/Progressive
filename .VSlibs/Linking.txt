@@ -1,0 +1,9 @@
+C:\Windows\System32 * for 32bit
+C:\Windows\SysWOW64 * for 64bit
+
+Linker -> input -> Additional Dependencies
+DevIL.lib
+ILU.lib
+ILUT.lib
+OpenGL32.lib
+freeglut.lib
